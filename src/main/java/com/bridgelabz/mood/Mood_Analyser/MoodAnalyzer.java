@@ -23,7 +23,7 @@ public class MoodAnalyzer {
 		}
 //		Null Point Exception
 		catch (NullPointerException e) {
-			throw new MoodAnalyzerException("You Have Passed A Null,PLEASE CHECK AGAIN");
+            throw new MoodAnalyzerException(MoodAnalyzerException.exceptionType.nullInput,"You Have Passed A Null,Please Check Again");
 		}
 	}
 }
