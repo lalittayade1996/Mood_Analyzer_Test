@@ -1,10 +1,13 @@
 package com.bridgelabz.mood.Mood_Analyser;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MoodAnalyzerTest {
-    @Test
-    public void givenMood_WhenHappySad_ReturnMessage() {
-        MoodAnalyzer moodTest = new MoodAnalyzer();
-    }
+	@Test
+	public void givenMood_WhenHappySad_ReturnMessage() {
+		MoodAnalyzer moodTest = new MoodAnalyzer();
+		String mood = moodTest.moodAnalyzer("I am in Sad Mood");
+		Assert.assertEquals("SAD", mood);
+	}
 }
