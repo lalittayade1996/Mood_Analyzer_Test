@@ -3,6 +3,7 @@ package com.bridgelabz.mood.Mood_Analyser;
 public class MoodAnalyzer {
 	public String message;
 
+//	Constructor 
 	public MoodAnalyzer() {
 	}
 
@@ -19,7 +20,7 @@ public class MoodAnalyzer {
 				return "HAPPY";
 
 		} catch (NullPointerException e) {
-			return "True";
+			return "HAPPY";
 		}
 	}
 }

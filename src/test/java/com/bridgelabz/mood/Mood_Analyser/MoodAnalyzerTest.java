@@ -22,6 +22,6 @@ public class MoodAnalyzerTest {
 	public void givenNull_WhenNull_ThrowsException() {
 		MoodAnalyzer moodTest = new MoodAnalyzer();
 		String mood = moodTest.moodAnalyzer(null);
-		Assert.assertEquals("True", mood);
+		Assert.assertEquals("HAPPY", mood);
 	}
 }
